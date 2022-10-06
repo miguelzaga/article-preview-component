@@ -2,20 +2,22 @@ import { useState } from "react";
 
 function App() {
   return (
-    <div>
-      <h1>New App</h1>
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-    </div>
+    <article>
+      <img src="" alt="" />
+      <div>
+        <h1>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+      </div>
+      <div>Michelle Appleton 28 Jun 2020</div>
+      <ul>Share</ul>
+    </article>
   );
 }
 
