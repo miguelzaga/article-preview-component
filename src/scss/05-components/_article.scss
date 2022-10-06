@@ -1,0 +1,37 @@
+@use "./../01-abstracts/" as *;
+
+.article {
+  &__wrapper {
+    padding: 74px 24px 81px;
+  }
+
+  max-width: 400px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  overflow: clip;
+
+  &__img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &__container {
+    padding: 36px 32px 20px;
+  }
+
+  &__title {
+    color: $very-dark-grayish-blue;
+    font-weight: 700;
+    font-size: rem(16px);
+    line-height: rem(24px);
+    letter-spacing: rem(0.2px);
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    line-height: rem(20px);
+    letter-spacing: rem(0.121875px);
+    margin-bottom: 32px;
+  }
+}
