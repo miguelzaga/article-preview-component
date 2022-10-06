@@ -1,1 +1,8 @@
 @use "./../01-abstracts/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: rem(13px);
+  font-weight: 500;
+}
