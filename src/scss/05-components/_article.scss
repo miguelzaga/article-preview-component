@@ -34,4 +34,29 @@
     letter-spacing: rem(0.121875px);
     margin-bottom: 32px;
   }
+
+  &__footer {
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__info {
+    margin-right: auto;
+    line-height: rem(20px);
+  }
+
+  &__author {
+    font-weight: 700;
+    color: $very-dark-grayish-blue;
+  }
+
+  &__date {
+    color: $grayish-blue;
+  }
+
+  &__avatar {
+    width: 40px;
+    border-radius: 100%;
+    float: left;
+  }
 }
