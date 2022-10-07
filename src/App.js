@@ -4,6 +4,7 @@ import avatar from "/src/images/avatar-michelle.jpg";
 import iconShare from "/src/images/icon-share.svg";
 
 function App() {
+  var [isSocialsOn, setIsSocialsOn] = useState(true);
   return (
     <div className="article__wrapper">
       <article className="article">
@@ -39,8 +40,23 @@ function App() {
                 alt="share icon"
               />
             </button>
+            {isSocialsOn ? (
+              <ul className="article__socials">
+                <li className="article__socials-li">Share</li>
+                <li className="article__socials-li">
+                  <button className="article__button js-socials">
+                    <img
+                      className="article__icon-share"
+                      src={iconShare}
+                      alt="share icon"
+                    />
+                  </button>
+                </li>
+              </ul>
+            ) : (
+              ""
+            )}
           </footer>
-          <ul className="article__socials hidden">Share</ul>
         </div>
       </article>
     </div>
