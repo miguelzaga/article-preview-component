@@ -1,6 +1,7 @@
 import { useState } from "react";
 import img from "/src/images/drawers.jpg";
 import avatar from "/src/images/avatar-michelle.jpg";
+import iconShare from "/src/images/icon-share.svg";
 
 function App() {
   return (
@@ -27,11 +28,17 @@ function App() {
             />
             <div className="article__info">
               <h2 className="article__author">Michelle Appleton</h2>
-              <time datetime="2020-05-28" className="article__date">
+              <time dateTime="2020-05-28" className="article__date">
                 28 Jun 2020
               </time>
             </div>
-            <button className="article__button js-socials">Press me</button>
+            <button className="article__button js-socials">
+              <img
+                className="article__icon-share"
+                src={iconShare}
+                alt="share icon"
+              />
+            </button>
           </footer>
           <ul className="article__socials hidden">Share</ul>
         </div>

@@ -36,6 +36,8 @@
   }
 
   &__footer {
+    display: flex;
+    flex-flow: row nowrap;
     align-items: center;
     gap: 16px;
   }
@@ -58,5 +60,18 @@
     width: 40px;
     border-radius: 100%;
     float: left;
+  }
+
+  &__button {
+    border: none;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    padding: 5px 0 7px;
+  }
+
+  &__icon-share {
+    width: 15px;
+    margin: auto;
   }
 }
