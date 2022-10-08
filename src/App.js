@@ -2,6 +2,9 @@ import { useState } from "react";
 import img from "/src/images/drawers.jpg";
 import avatar from "/src/images/avatar-michelle.jpg";
 import iconShare from "/src/images/icon-share.svg";
+import iconPinterest from "/src/images/icon-pinterest.svg";
+import iconTwitter from "/src/images/icon-twitter.svg";
+import iconFacebook from "/src/images/icon-facebook.svg";
 
 function App() {
   var [isSocialsOn, setIsSocialsOn] = useState(true);
@@ -43,6 +46,27 @@ function App() {
             {isSocialsOn ? (
               <ul className="article__socials">
                 <li className="article__socials-li">Share</li>
+                <li className="article__socials-li">
+                  <img
+                    className="article_socials-icon"
+                    src={iconFacebook}
+                    alt="Facebook icon"
+                  />
+                </li>
+                <li className="article__socials-li">
+                  <img
+                    className="article_socials-icon"
+                    src={iconTwitter}
+                    alt="Twitter icon"
+                  />
+                </li>
+                <li className="article__socials-li">
+                  <img
+                    className="article_socials-icon"
+                    src={iconPinterest}
+                    alt="Pinterest icon"
+                  />
+                </li>
                 <li className="article__socials-li">
                   <button className="article__button js-socials">
                     <img
