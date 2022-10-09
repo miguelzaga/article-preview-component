@@ -88,6 +88,20 @@
     color: $grayish-blue;
     display: flex;
     align-items: center;
+    gap: 16px;
     padding: 16px 32px;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 5px;
+
+    &-li {
+      &:first-child {
+        margin-right: 5px;
+      }
+
+      &:last-child {
+        margin-left: auto;
+      }
+    }
   }
 }
