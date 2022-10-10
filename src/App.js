@@ -36,15 +36,26 @@ function App() {
                 28 Jun 2020
               </time>
             </div>
-            <button className="article__button js-socials">
-              <img
+            <button
+              onClick={function toggleSocials() {
+                if (isSocialsOn) {
+                  return setIsSocialsOn(false);
+                } else {
+                  return setIsSocialsOn(true);
+                }
+              }}
+              className={`article__button ${
+                isSocialsOn ? "article__button--toggled" : ""
+              }`}
+            >
+              <svg
                 className="article__icon-share"
-                src={iconShare}
-                alt="share icon"
-                onClick={() => {
-                  setIsSocialsOn(true);
-                }}
-              />
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="13"
+              >
+                <path d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+              </svg>
             </button>
             {isSocialsOn ? (
               <ul className="article__socials">
@@ -69,18 +80,6 @@ function App() {
                     src={iconPinterest}
                     alt="Pinterest icon"
                   />
-                </li>
-                <li className="article__socials-li">
-                  <button className="article__button js-socials">
-                    <img
-                      className="article__icon-share"
-                      src={iconShare}
-                      alt="share icon"
-                      onClick={() => {
-                        setIsSocialsOn(false);
-                      }}
-                    />
-                  </button>
                 </li>
               </ul>
             ) : (
