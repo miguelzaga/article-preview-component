@@ -7,7 +7,7 @@ import iconTwitter from "/src/images/icon-twitter.svg";
 import iconFacebook from "/src/images/icon-facebook.svg";
 
 function App() {
-  var [isSocialsOn, setIsSocialsOn] = useState(true);
+  var [isSocialsOn, setIsSocialsOn] = useState(false);
   return (
     <div className="article__wrapper">
       <article className="article">
@@ -41,6 +41,9 @@ function App() {
                 className="article__icon-share"
                 src={iconShare}
                 alt="share icon"
+                onClick={() => {
+                  setIsSocialsOn(true);
+                }}
               />
             </button>
             {isSocialsOn ? (
@@ -73,6 +76,9 @@ function App() {
                       className="article__icon-share"
                       src={iconShare}
                       alt="share icon"
+                      onClick={() => {
+                        setIsSocialsOn(false);
+                      }}
                     />
                   </button>
                 </li>
