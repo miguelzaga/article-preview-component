@@ -2,24 +2,42 @@
 
 .article {
   position: relative;
-
-  &__wrapper {
-    padding: 74px 24px 81px;
-  }
-
   max-width: 400px;
   margin: auto;
   background-color: white;
   border-radius: 10px;
   overflow: clip;
+  display: flex;
+  flex-direction: column;
+  @include breakpoint($lg) {
+    max-width: 730px;
+    flex-direction: row;
+  }
+
+  &__wrapper {
+    padding: 74px 24px 81px;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__img {
     height: 200px;
     object-fit: cover;
+    @include breakpoint($lg) {
+      height: auto;
+      max-width: 285px;
+      object-position: left;
+    }
   }
 
   &__container {
     padding: 36px 32px 20px;
+    @include breakpoint($lg) {
+      padding: 32px 40px;
+    }
   }
 
   &__title {
@@ -29,6 +47,11 @@
     line-height: rem(24px);
     letter-spacing: rem(0.2px);
     margin-bottom: 12px;
+    @include breakpoint($lg) {
+      font-size: rem(20px);
+      line-height: rem(28px);
+      letter-spacing: rem(0.25px);
+    }
   }
 
   &__text {
@@ -41,10 +64,13 @@
     flex-flow: row nowrap;
     align-items: center;
     gap: 16px;
-    min-height: 40px;
+    min-height: 44px;
     margin-top: 32px;
 
     &--socials {
+      margin-top: 20px;
+    }
+    @include breakpoint($lg) {
       margin-top: 20px;
     }
   }
