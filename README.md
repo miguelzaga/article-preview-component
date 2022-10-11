@@ -53,8 +53,8 @@ I need to do more React projects.
 
 ### Useful resources
 
-- [https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit](How To Scale and Crop Images with CSS object-fit) - Great guide to manage images with size constrains.
-- [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time](<time>: The Time element) - Easy to read docs about the tag.
+- [How To Scale and Crop Images with CSS object-fit](https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit) - Great guide to manage images with size constrains.
+- [The Time element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time) - Easy to read docs about the tag.
 
 
 ## Author
