@@ -24,7 +24,11 @@ function App() {
               help you make any room feel complete.
             </p>
           </main>
-          <footer className="article__footer">
+          <footer
+            className={`article__footer ${
+              isSocialsOn ? "article__footer--socials" : ""
+            }`}
+          >
             <img
               className="article__avatar"
               src={avatar}
@@ -45,7 +49,7 @@ function App() {
                 }
               }}
               className={`article__button ${
-                isSocialsOn ? "article__button--toggled" : ""
+                isSocialsOn ? "article__button--socials" : ""
               }`}
             >
               <svg
@@ -61,25 +65,31 @@ function App() {
               <ul className="article__socials">
                 <li className="article__socials-li">Share</li>
                 <li className="article__socials-li">
-                  <img
-                    className="article_socials-icon"
-                    src={iconFacebook}
-                    alt="Facebook icon"
-                  />
+                  <a href="#">
+                    <img
+                      className="article_socials-icon"
+                      src={iconFacebook}
+                      alt="Facebook icon"
+                    />
+                  </a>
                 </li>
                 <li className="article__socials-li">
-                  <img
-                    className="article_socials-icon"
-                    src={iconTwitter}
-                    alt="Twitter icon"
-                  />
+                  <a href="#">
+                    <img
+                      className="article_socials-icon"
+                      src={iconTwitter}
+                      alt="Twitter icon"
+                    />
+                  </a>
                 </li>
                 <li className="article__socials-li">
-                  <img
-                    className="article_socials-icon"
-                    src={iconPinterest}
-                    alt="Pinterest icon"
-                  />
+                  <a href="#">
+                    <img
+                      className="article_socials-icon"
+                      src={iconPinterest}
+                      alt="Pinterest icon"
+                    />
+                  </a>
                 </li>
               </ul>
             ) : (

@@ -34,7 +34,6 @@
   &__text {
     line-height: rem(20px);
     letter-spacing: rem(0.121875px);
-    margin-bottom: 32px;
   }
 
   &__footer {
@@ -43,6 +42,11 @@
     align-items: center;
     gap: 16px;
     min-height: 40px;
+    margin-top: 32px;
+
+    &--socials {
+      margin-top: 20px;
+    }
   }
 
   &__info {
@@ -83,9 +87,10 @@
       transform: scale(0.9);
     }
 
-    &--toggled {
+    &--socials {
       background-color: $desaturated-dark-blue;
       color: white;
+      top: 8px;
     }
   }
 
