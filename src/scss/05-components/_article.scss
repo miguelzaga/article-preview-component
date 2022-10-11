@@ -6,7 +6,6 @@
   margin: auto;
   background-color: white;
   border-radius: 10px;
-  overflow: clip;
   display: flex;
   flex-direction: column;
   @include breakpoint($lg) {
@@ -26,7 +25,12 @@
   &__img {
     height: 200px;
     object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     @include breakpoint($lg) {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 10px;
       height: auto;
       max-width: 285px;
       object-position: left;
@@ -72,6 +76,7 @@
     }
     @include breakpoint($lg) {
       margin-top: 20px;
+      position: relative;
     }
   }
 
@@ -117,6 +122,9 @@
       background-color: $desaturated-dark-blue;
       color: white;
       top: 8px;
+      @include breakpoint($lg) {
+        top: 0;
+      }
     }
   }
 
@@ -142,9 +150,22 @@
     text-transform: uppercase;
     line-height: 20px;
     letter-spacing: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
     &-li:first-child {
       margin-right: 5px;
+    }
+
+    @include breakpoint($lg) {
+      border-radius: 10px;
+      box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+      max-width: 248px;
+      left: unset;
+      right: calc((248px - 32px) / -2);
+      bottom: 64px;
+      height: unset;
+      padding: 18px 36px 17px;
     }
   }
 }
