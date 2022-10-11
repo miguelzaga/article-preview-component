@@ -8,6 +8,7 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
   @include breakpoint($lg) {
     max-width: 730px;
     flex-direction: row;
@@ -157,6 +158,10 @@
       margin-right: 5px;
     }
 
+    &-pattern {
+      display: none;
+    }
+
     @include breakpoint($lg) {
       border-radius: 10px;
       box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
@@ -166,6 +171,21 @@
       bottom: 64px;
       height: unset;
       padding: 18px 36px 17px;
+      z-index: 2;
+
+      &-pattern {
+        background-color: $very-dark-grayish-blue;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        display: block;
+        right: calc((248px - 32px) / -2);
+        bottom: 64px;
+        transform: rotate(45deg);
+        top: 38px;
+        left: 112px;
+        z-index: -1;
+      }
     }
   }
 }

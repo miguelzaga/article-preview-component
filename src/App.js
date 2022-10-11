@@ -91,6 +91,7 @@ function App() {
                     />
                   </a>
                 </li>
+                <div className="article__socials-pattern"></div>
               </ul>
             ) : (
               ""
